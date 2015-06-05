@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlaceChoiceActivity" >
+
+    <!-- 头部Head -->
+
+    <RelativeLayout
+        style="@style/layout_head"
+        android:background="#FFF" >
+
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_place_choice"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/more_choice"
+            style="@style/image_head"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 已选目的地 -->
+
+            <LinearLayout
+                android:id="@+id/already_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/shadow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_place" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/shadow" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/already_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="#4000"
+                android:padding="23dp"
+                android:numColumns="3"
+                android:visibility="gone" >
+            </GridView>
+
+            <!-- 热门目的地 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_place_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choose_place_hot" />
+
+                <TextView
+                    android:id="@+id/txt_place_hot"
+                    style="@style/place_choice"
+                    android:text="热门目的地" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="23dp"
+                android:background="#D2ACEE"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"
+                android:visibility="gone" >
+            </GridView>
+
+            <!-- 亚洲地区 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_place_asia"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/choose_place_asia" >
+
+                <TextView
+                    android:id="@+id/txt_place_asia"
+                    style="@style/place_choice"
+                    android:text="亚洲" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView_aina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="23dp"
+                android:background="#1886C3"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"
+                android:visibility="gone" >
+            </GridView>
+
+            <!-- 欧美地区 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_place_europe"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/choose_place_occident" >
+
+                <TextView
+                    android:id="@+id/txt_place_europe"
+                    style="@style/place_choice"
+                    android:text="欧美" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView_europe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="23dp"
+                android:background="#95448F"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"
+                android:visibility="gone" >
+            </GridView>
+
+            <!-- 澳洲 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_place_australia"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/choose_place_australia" >
+
+                <TextView
+                    android:id="@+id/txt_place_australia"
+                    style="@style/place_choice"
+                    android:text="澳洲" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView_australia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="23dp"
+                android:background="#D0C039"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"
+                android:visibility="gone" >
+            </GridView>
+
+            <!-- 国内 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_place_china"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/choose_place_china" >
+
+                <TextView
+                    android:id="@+id/txt_place_china"
+                    style="@style/place_choice"
+                    android:text="国内" />
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gridView_china"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="23dp"
+                android:background="#3095C5"
+                android:gravity="center_horizontal"
+                android:numColumns="3"
+                android:verticalSpacing="15dp"
+                android:visibility="gone" >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/arrow"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/feed_back" />
+
+</LinearLayout>

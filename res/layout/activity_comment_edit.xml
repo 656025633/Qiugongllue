@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/layout_head" >
+
+        <ImageView
+            android:id="@+id/imageView_commentEdit_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:onClick="ClickButton"
+            android:src="@drawable/back" />
+
+        <TextView style="@style/text_head" />
+
+        <ImageView
+            android:id="@+id/imageView_commentEdit_send"
+            style="@style/image_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:onClick="ClickButton"
+            android:src="@drawable/send" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+</LinearLayout>

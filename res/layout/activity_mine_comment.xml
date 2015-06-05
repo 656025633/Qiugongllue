@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MineCommentActivity"
+    android:orientation="vertical" >
+    <!-- 头部Head -->
+    <RelativeLayout style="@style/layout_head" >
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_recommand" />
+        
+        <ImageView
+            android:id="@+id/more_choice"
+            style="@style/image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/back" />
+        
+        
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/firstTop" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="首张在前"
+            />
+        
+        <Button
+            android:id="@+id/newsTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="最新在前"
+            />
+    </LinearLayout>
+    
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

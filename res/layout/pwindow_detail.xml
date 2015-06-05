@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50BBFE">
+    
+    <ImageView
+        android:id="@+id/back_pwindow" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"/>
+    
+    <ImageView
+        android:id="@+id/go_pwindow" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/navbar_forward"/>
+    
+    <ImageView
+        android:id="@+id/share_pwindow" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/webview_share"/>
+    
+    <ImageView
+        android:id="@+id/refresh_pwindow" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/webview_refresh"/>
+    
+
+</RelativeLayout>

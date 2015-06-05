@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+ 
+    <ListView
+        android:id="@+id/listview_mainPlace"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    
+   <ListView
+        android:id="@+id/listview_DetailPlace"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    
+</LinearLayout>

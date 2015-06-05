@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部Head -->
+    <RelativeLayout
+        style="@style/layout_head"
+        android:layout_height="200dp"
+        android:background="@drawable/mine_bg" >
+
+        <ImageView
+            android:id="@+id/img_setting_mine"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/profile_setting" />
+
+        <ImageView
+            android:id="@+id/img_icon_mine"
+            style="@style/image_head"
+            android:src="@drawable/rc_ic_portrait"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="false" />
+        
+        <TextView 
+            android:id="@+id/txt_nickname_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_icon_mine"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textColor="#FFF"
+            android:text="谁于心不忍"/>
+        
+        <TextView 
+            android:id="@+id/txt_follow_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_nickname_mine"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            android:textColor="#FFF"
+            android:text="关注0/粉丝0"/>
+        
+    </RelativeLayout>
+
+    <!-- 个人签名 -->
+
+    <TextView
+        android:id="@+id/txt_sign_mine"
+        style="@style/text_mine"
+        android:layout_marginTop="8dp"
+        android:text="@string/sign_mine" />
+
+    <!-- 我的订单 -->
+    <TextView
+        android:id="@+id/txt_order_mine"
+        style="@style/text_mine"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/profile_orderlist"
+        android:text="@string/order_mine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#44000000" />
+
+    <!-- 我的动态 -->
+    <TextView
+        android:id="@+id/txt_share_mine"
+        style="@style/text_mine"
+        android:drawableLeft="@drawable/profile_share"
+        android:text="@string/share_mine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#44000000" />
+
+    <!-- 我的评论 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_comment_mine"
+            style="@style/text_mine"
+            android:drawableLeft="@drawable/profile_comment"
+            android:text="@string/comment_mine_txt" />
+
+        <TextView
+            android:id="@+id/number_comment"
+            style="@style/text_number_mine"
+            android:text="@string/number_mine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#44000000" />
+
+    <!-- 我的足迹 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_step_mine"
+            style="@style/text_mine"
+            android:drawableLeft="@drawable/profile_been"
+            android:text="@string/step_mine_txt" />
+
+        <TextView
+            android:id="@+id/number_step"
+            style="@style/text_number_mine"
+            android:text="@string/number_mine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#44000000" />
+
+</LinearLayout>

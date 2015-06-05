@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:davie="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部Head -->
+
+    <RelativeLayout style="@style/layout_head" >
+
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_recommand" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.qiugonglue.view.CustomIndicator
+            android:id="@+id/indicator_banner"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            davie:count="4"
+            davie:height="20dp"
+            davie:margin="5dp"
+            davie:normal_icon="@drawable/dot_0"
+            davie:selected_icon="@drawable/dot_1"
+            davie:width="20dp" >
+        </com.qiugonglue.view.CustomIndicator>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#2000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_gongneng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="特惠推荐"
+            android:textColor="#4000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="查看更多"
+            android:textColor="#50BBFE" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现新奇"
+            android:textColor="#4000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="发现更多"
+            android:textColor="#50BBFE" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_armplace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </ListView>
+
+    <GridLayout
+        android:id="@+id/container_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2" >
+    </GridLayout>
+
+</LinearLayout>

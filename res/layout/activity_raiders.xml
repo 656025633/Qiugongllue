@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RaidersActivity"
+    android:orientation="vertical"
+    >
+
+    <!-- 头部Head -->
+    <RelativeLayout style="@style/layout_head" >
+
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_recommand" />
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </HorizontalScrollView>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

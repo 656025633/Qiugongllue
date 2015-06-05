@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 头部Head -->
+    <RelativeLayout style="@style/layout_head" >
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_recommand" />
+        <ImageView
+            android:id="@+id/more_choice"
+            style="@style/image_head"
+            android:src="@drawable/bar_icon_place" />
+    </RelativeLayout>
+
+    <com.qiugonglue.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:background="#FFF" >
+    </com.qiugonglue.pulltorefresh.PullToRefreshListView>
+
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/version_home"
+        />
+</LinearLayout>

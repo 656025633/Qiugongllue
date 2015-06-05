@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiugongllue"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.qiugonglue.app.AppCtx"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.qiugongllue.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.qiugongllue.Activity"
+            android:label="@string/title_activity" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.MeterailActivity"
+            android:label="@string/title_activity_meterail" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.OderListActivity"
+            android:label="@string/title_activity_oder_list" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.MineShareActivity"
+            android:label="@string/title_activity_mine_share" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.MineCommentActivity"
+            android:label="@string/title_activity_mine_comment" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.MineStepActivity"
+            android:label="@string/title_activity_mine_step" >
+        </activity>
+        <activity
+            android:name="com.qiugongllue.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.PlaceChoiceActivity"
+            android:label="@string/title_activity_place_choice" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.ArmPlaceActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+
+        <!-- 分享的配置 -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.qiugonglue.activity.LocalActivity"
+            android:label="@string/title_activity_local" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.RaidersActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        
+        <activity
+            android:name="com.qiugonglue.activity.WorldClockActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.GroupDetailActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.DynamicActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.CommentEditActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.FootPrintActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.OtherPersonActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+        <activity
+            android:name="com.qiugonglue.activity.TADynamicActivity"
+            android:label="@string/title_activity_raiders" >
+        </activity>
+    </application>
+</manifest>

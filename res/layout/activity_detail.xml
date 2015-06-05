@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:id="@+id/all_detail" >
+
+    <!-- 头部Head -->
+
+    <RelativeLayout style="@style/layout_head" >
+
+        <ImageView
+            android:id="@+id/back_detail"
+            style="@style/image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_service" />
+
+        <ImageView
+            android:id="@+id/share_detail"
+            style="@style/image_head"
+            android:src="@drawable/share_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <WebView
+            android:id="@+id/webview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/top_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/top_btn_bg"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:text="@string/top_detail" />
+</LinearLayout>

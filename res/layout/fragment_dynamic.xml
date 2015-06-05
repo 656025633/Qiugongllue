@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/layout_head" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/ScrollView_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fadingEdge="@null"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/ImageView_mian_line"
+                    android:layout_width="85dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="#c50000" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/imageView_Dynamic_addDynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="380dp"
+        android:clickable="true"
+        android:src="@drawable/home_bar_icon_group_hold" />
+
+</FrameLayout>

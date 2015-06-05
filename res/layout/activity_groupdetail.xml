@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:id="@+id/all_detail" >
+
+    <!-- 头部Head -->
+
+    <RelativeLayout style="@style/layout_head" >
+
+        <ImageView
+            android:id="@+id/back_detail"
+            style="@style/image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/text_name_place"
+            style="@style/text_head"
+            android:text="五月香港见"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/text_id_place"
+            style="@style/text_head"
+            android:text="群ID:1732"
+            android:paddingTop="0dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/text_name_place"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="群成员"
+                android:textColor="#4000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/member_group" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="407/500"
+                android:layout_alignParentRight="true"
+                android:textColor="#4000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#9000"/>
+        
+        <RelativeLayout
+            android:id="@+id/member_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="#FFF"
+            >
+            <LinearLayout
+                android:id="@+id/icon_layout" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow"/>
+       </RelativeLayout>
+       
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#9000"/>
+        <RelativeLayout
+            android:id="@+id/invite_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#FFF"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="邀请新成员"
+                android:textColor="#4000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+               android:src="@drawable/arrow"/>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFF"
+            >
+            
+            <TextView
+                android:id="@+id/arm" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="目的地"
+                android:textColor="#4000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/text_armplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/arm"
+                android:text="台湾"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#9000"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFF"
+            >
+            
+            <TextView
+                android:id="@+id/desc" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="群介绍"
+                android:textColor="#4000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            
+            <TextView
+                android:id="@+id/text_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/desc"
+                android:text="5月去台湾的小伙伴加..."
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:text="加入群组"
+        android:background="#50BBFE"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+       />
+</LinearLayout>

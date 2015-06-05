@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LocalActivity" >
+
+    <!-- 头部Head -->
+    <RelativeLayout style="@style/layout_head" >
+
+        <ImageView
+            android:id="@+id/back_detail"
+            style="@style/image_head"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/text_head"
+            android:text="@string/text_head_service" />
+
+        <ImageView
+            android:id="@+id/share_detail"
+            style="@style/image_head"
+            android:src="@drawable/share_icon" />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/place_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:textColor="#4000"
+        android:text="@string/place_dialog"/>
+    
+     <com.qiugonglue.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:background="#FFF" >
+    </com.qiugonglue.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>
